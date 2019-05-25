@@ -41,6 +41,7 @@ html {
 
   flex-wrap: wrap;
   justify-content: center;
+  align-items: baseline;
 }
 
 .main-inner-left > div {
@@ -198,7 +199,7 @@ html {
 
 .main-inner-left div img {
   position: relative;
-  top: 6px;
+  top: 3px;
   left: -10px;
 }
 

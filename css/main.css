@@ -55,6 +55,9 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .main-inner-left > div {
@@ -252,7 +255,7 @@ html {
 
 .main-inner-left div img {
   position: relative;
-  top: 6px;
+  top: 3px;
   left: -10px;
 }
 

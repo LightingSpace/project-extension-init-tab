@@ -34,7 +34,7 @@ function showTime() {
   let time = h + ":" + m + ":" + s + " ";
 
   let time2 =
-    allWeek[dayOfWeek] + ", " + dayy + " , " + allYear[monn] + " , " + yearr;
+    allWeek[dayOfWeek] + ", " + dayy + "  " + allYear[monn] + " , " + yearr;
   document.getElementById("clock-hours").innerText = time;
   document.getElementById("clock-days").innerText = time2;
 }
