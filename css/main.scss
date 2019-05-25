@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Teko:300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ropa+Sans:400,400i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pathway+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Neuton:300,400,400i&display=swap");
+:root {
+  --settings-color: #87dff3;
+  --gist-color: #4cf075;
+  --stack-overflow-color: #fab367;
+  --trending-color: #f171ba;
+  --scratch-pad-color: #bd93f8;
+  --playground-color: #f3f3ec;
+  --help-color: #dbd06f;
+  --general-white: #fbfbfd;
+  --reddit-score-color: #6f80b6;
+  --rest-background-color: #2b3035;
+  --relevant-history-info: #7081b6;
+  --time-ago-color: #999;
+}
+
+.main-section {
+  min-height: 600px;
+}
+body,
+html {
+  background-color: grey;
+  height: 100vh;
+}
+.main-inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+}
+.main-inner-left {
+  background-color: #44475a;
+  min-width: 9rem;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-inner-left > div {
+  white-space: nowrap;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 5px;
+}
+
+@for $i from 1 through 7 {
+  .main-inner-left > div:nth-child(#{$i}) {
+    cursor: pointer;
+  }
+}
+
+.main-inner-center {
+  background-color: azure;
+  flex-grow: 1;
+}
+
+.main-inner-right {
+  background-color: yellow;
+}
+
+.main-inner-centerMinor {
+  background-color: darkmagenta;
+}
+
+.my-wrench-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #44475a;
+  background-color: var(--settings-color);
+}
+.main-inner-left > div:first-child span:nth-child(2) {
+  color: var(--settings-color);
+}
+
+.my-wrench-icon1 {
+  background-color: var(--gist-color);
+}
+
+.main-inner-left > div:nth-child(2) span:nth-child(2) {
+  color: var(--gist-color);
+}
+
+.my-wrenc-icon2 {
+  background-color: var(--stack-overflow-color);
+}
+.main-inner-left > div:nth-child(3) span:nth-child(2) {
+  color: var(--stack-overflow-color);
+}
+
+.my-wrench-icon3 {
+  background-color: var(--trending-color);
+}
+.main-inner-left > div:nth-child(4) span:nth-child(2) {
+  color: var(--trending-color);
+}
+
+.my-wrench-icon4 {
+  background-color: var(--scratch-pad-color);
+}
+.main-inner-left > div:nth-child(5) span:nth-child(2) {
+  color: var(--scratch-pad-color);
+}
+
+.my-wrench-icon5 {
+  background-color: var(--playground-color);
+}
+.main-inner-left > div:nth-child(6) span:nth-child(2) {
+  color: var(--playground-color);
+}
+
+.my-wrench-icon6 {
+  background-color: var(--help-color);
+}
+.main-inner-left > div:nth-child(7) span:nth-child(2) {
+  color: var(--help-color);
+}
+
+.my-left-options {
+  font-size: 0.8rem;
+  font-family: "Inconsolata", monospace;
+  color: #8be9fd;
+  margin: 0.5rem;
+}
+
+.left-bottom-social {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-end;
+  width: 100%;
+  text-align: center;
+}
+
+.initab-bottom img {
+  cursor: pointer;
+  opacity: 0.3;
+  transition: all 0.5s;
+}
+
+.initab-bottom img:hover {
+  opacity: 1;
+  fill: yellow;
+}
+
+.social-bottom {
+  margin-top: 0.5rem;
+}
+
+.social-bottom > span {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.main-inner-centerMinor {
+  background-color: #343a40;
+  min-width: 13rem;
+}
+
+/* SECTION TWO */
+
+.main-inner-centerMinor {
+  overflow: hidden;
+  background-color: var(--rest-background-color);
+}
+
+.main-inner-centerMinor h4,
+.main-inner-center h4,
+.main-inner-right h4 {
+  text-align: center;
+  color: var(--settings-color);
+
+  font-family: "Teko", sans-serif; /* ten ok*/
+  font-family: "Ropa Sans", sans-serif; /* ten ok*/
+
+  font-family: "Pathway Gothic One", sans-serif; /* ten ok */
+  font-family: "Neuton", serif;
+  font-weight: 300;
+}
+
+.main-inner-centerMinor img,
+.main-inner-center img,
+.main-inner-right img {
+  position: relative;
+  top: 8px;
+  left: -10px;
+}
+
+.main-inner-left div img {
+  position: relative;
+  top: 6px;
+  left: -10px;
+}
+
+.main-popular-javascript {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+}
+
+.main-popular-javascript p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--general-white);
+  margin-bottom: 0;
+  margin-left: 0.8rem;
+}
+
+.main-popular-javascript p:nth-child(2) {
+  color: var(--scratch-pad-color);
+}
+
+.main-popular-javascript p:nth-child(3) {
+  color: var(--reddit-score-color);
+}
+
+.main-popular-javascript a {
+  color: var(--trending-color);
+}
+
+.popular-javascript {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  border-left: 3px solid #44475a;
+}
+
+.popular-javascript-name {
+  color: var(--stack-overflow-color);
+}
+
+/* SECTION CENTER -- RELEVANT HISTORY*/
+.main-inner-center {
+  background-color: var(--rest-background-color);
+}
+
+.small-inner-center {
+  overflow: hidden;
+  height: 40%;
+}
+.relevant-history {
+}
+
+.relevant-history p {
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+  color: var(--relevant-history-info);
+  font-family: "Neuton", serif;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+}
+
+.relevant-history p:nth-child(1) {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.relevant-history p:nth-child(2) {
+  font-family: "Teko", sans-serif; /* ten ok*/
+  font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.05rem;
+  color: var(--time-ago-color);
+}
+
+.relevant-history > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.small-inner-center {
+  border-bottom: 1px solid darkcyan;
+}
+
+/* CLOCK SECTION*/
+.clock-section {
+  text-align: center;
+}
+
+.only-clock p {
+  margin: 0;
+  color: var(--relevant-history-info);
+}
+
+.only-clock p:first-child {
+  font-size: 8rem;
+}
+
+.main-inner-right {
+  background-color: var(--rest-background-color);
+}
+
+/* last SECTION */
+
+.main-inner-right {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-inner-right .popular-javascript p:first-child {
+  color: var(--relevant-history-info);
+}
+
+.main-inner-right .popular-javascript p:nth-child(2) {
+  color: var(--stack-overflow-color);
+}
+
+.main-inner-right .popular-javascript p:nth-child(3) {
+  color: var(--general-white);
+}
+
+.main-inner-right h4 {
+  margin-bottom: 0.2rem;
+}
+
+.main-inner-right h4:nth-child(3) {
+  margin-bottom: 1.5rem;
+}
+
+.main-inner-right h6 {
+  text-align: center;
+  margin: 0;
+}
+
+.main-inner-right h4:nth-child(3) img {
+  position: relative;
+  top: 13px;
+  left: 30px;
+}
+
+.main-inner-right h6 a {
+  font-family: "Neuton", serif;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  color: var(--relevant-history-info);
+  margin: 0;
+}
+
+@media all and (min-width: 720px) {
+  main,
+  .main-section,
+  .main-inner {
+    height: 100%;
+  }
+  .main-inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+
+  .main-inner-left {
+    background-color: #44475a;
+    min-width: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .main-inner-left > div {
+    margin-left: 0.5rem;
+  }
+
+  .main-inner-left > div:first-child {
+    margin-top: 1.5rem;
+  }
+
+  /* SECTION TWO */
+  .main-popular-javascript {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* SECTION THREE*/
+  .small-inner-center {
+    overflow: hidden;
+  }
+
+  /* last Section */
+  .main-inner-right {
+    width: 32%;
+  }
+}
