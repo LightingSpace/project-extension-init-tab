@@ -350,6 +350,17 @@ html {
   margin-bottom: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.relevant-history > div img {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 7px;
 }
 
 .small-inner-center {
