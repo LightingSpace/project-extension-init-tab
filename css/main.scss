@@ -63,11 +63,7 @@ html {
 }
 
 .main-inner-right {
-  background-color: yellow;
-}
-
-.main-inner-centerMinor {
-  background-color: darkmagenta;
+  // overflow-y: auto;
 }
 
 .my-wrench-icon {
@@ -163,15 +159,16 @@ html {
   cursor: pointer;
 }
 
-.main-inner-centerMinor {
-  background-color: #343a40;
-  min-width: 13rem;
-}
-
 /* SECTION TWO */
 
 .main-inner-centerMinor {
-  overflow: hidden;
+  /* background-color: darkmagenta;
+
+  background-color: #343a40; */
+  min-width: 13rem;
+
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: var(--rest-background-color);
 }
 
@@ -207,6 +204,7 @@ html {
   display: flex;
   flex-direction: row;
   margin-left: 2rem;
+  overflow-y: auto;
 }
 
 .main-popular-javascript p {
@@ -320,7 +318,8 @@ html {
 
 .main-inner-right {
   width: 100%;
-  overflow: hidden;
+
+  overflow-y: auto;
 }
 
 .main-inner-right .popular-javascript p:first-child {
