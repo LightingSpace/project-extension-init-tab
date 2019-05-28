@@ -423,7 +423,7 @@ html {
   margin: 0;
 }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 1025px) {
   main,
   .main-section,
   .main-inner {
